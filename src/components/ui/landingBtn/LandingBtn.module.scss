@@ -1,0 +1,19 @@
+@import "../../../app/variables";
+
+.landing_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 213px;
+    height: 46px;
+    padding: 14px 20px;
+    background: linear-gradient(180deg, var(--main-text-color-first) 0%, var(--main-text-color-second) 100%);
+    border-radius: 12px;
+    @include text-style(var(--main-text-color-third), 14px, 28px, 600);
+    transition: background 0.3s ease;
+}
+
+.landing_btn:hover {
+    background: linear-gradient(180deg, var(--main-active-btn) 0%, var(--main-active-btn) 100%);
+}

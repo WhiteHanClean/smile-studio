@@ -1,0 +1,16 @@
+@import "../../../app/variables";
+
+.landing_nav {
+  a {
+    @include text-style(var(--main-text-color), 15px, 24px, 600);
+    transition: 0.2s;
+    margin-right: 8px;
+    padding: 0 8px;
+  }
+  a:hover {
+    @include text-style(var(--main-active-btn), 15px, 24px, 600);
+  }
+  a:last-child {
+    margin: 0;
+  }
+}

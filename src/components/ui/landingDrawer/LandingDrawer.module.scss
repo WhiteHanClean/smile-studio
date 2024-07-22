@@ -1,0 +1,37 @@
+@import "../../../app/variables";
+
+.drawer_body {
+  :global {
+    .ant-drawer {
+      .ant-drawer-content {
+        background: var(--main-text-color-third);
+        height: 100vh;
+        .ant-drawer-header {
+          border-bottom: none;
+          padding: 0;
+          .ant-drawer-header-title {
+            flex-direction: row-reverse;
+            padding: 17px 24px 55px 17px;
+            svg {
+              fill: var(--main-text-color);
+            }
+          }
+        }
+        .ant-drawer-body {
+          padding: 0 17px 24px 17px;
+        }
+        .ant-drawer-footer {
+          border-top: none;
+          padding: 24px;
+          text-align: center;
+          p {
+            @include text-style(#A0A8B7, 15px, 21px, 700);
+          }
+        }
+      }
+      .ant-drawer-mask {
+        height: 100vh;
+      }
+    }
+  }
+}
