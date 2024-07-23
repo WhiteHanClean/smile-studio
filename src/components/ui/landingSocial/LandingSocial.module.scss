@@ -1,0 +1,17 @@
+@import "../../../app/variables";
+
+.landing_socials {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  p {
+    @include text-style(var(--main-text-color), 15px, 21px, 700);
+    padding: 0 10px;
+  }
+  a {
+    margin-right: 20px;
+  }
+  a:last-child {
+    margin-right: 0;
+  }
+}

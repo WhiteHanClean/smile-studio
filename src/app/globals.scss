@@ -1,10 +1,12 @@
 :root {
-  --font-family: "Nunito Sans", sans-serif;
-  --main-text-color: #FFF;
-  --main-text-color-first: #39CCA9;
-  --main-text-color-second: #69BBE2;
-  --main-text-color-third: #171A2D;
-  --main-bacground-color-section: #171A2D;
+  --font-family: "Nunito Sans", Arial;
+  --main-text-color: #fff;
+  --main-text-color-first: #39cca9;
+  --main-text-color-second: #69bbe2;
+  --main-text-color-third: #171a2d;
+  --main-bacground-color-section: #171a2d;
+  --main-active-btn: #239ca2;
+  --main-footer-color: #324064;
 }
 
 *,
@@ -23,7 +25,7 @@ html {
 }
 
 body {
-  background-color: #171A2D;
+  background-color: #171a2d;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
