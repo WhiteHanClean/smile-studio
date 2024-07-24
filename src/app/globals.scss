@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
 :root {
   --font-family: "Nunito Sans", Arial;
   --main-text-color: #fff;
@@ -7,6 +9,7 @@
   --main-bacground-color-section: #171a2d;
   --main-active-btn: #239ca2;
   --main-footer-color: #324064;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 *,
@@ -88,4 +91,13 @@ select {
   color: inherit;
   font: inherit;
   cursor: pointer;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+.swiper .swiper-pagination-bullet-active {
+  transform: scale(2);
+  transform-origin: center;
 }

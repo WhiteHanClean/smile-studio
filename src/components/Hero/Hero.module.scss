@@ -1,0 +1,113 @@
+@import "../../app/variables";
+
+.hero {
+  position: relative;
+  height: 100vh;
+  .hero_background {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+  }
+  img {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fade 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    }
+  .hero_mask {
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(
+      180deg,
+      rgba(25, 28, 48, 0.97) 1.51%,
+      rgba(25, 28, 48, 0.6) 76.55%,
+      rgba(75, 85, 147, 0) 103.6%
+    );
+    mix-blend-mode: multiply;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .hero_items {
+    z-index: 3;
+    position: relative;
+    padding-top: 185px;
+    max-width: 621px;
+    h1 {
+      @include text-style(var(--main-text-color), 52px, 57px, 700);
+      margin-bottom: 16px;
+    }
+    h3 {
+      @include text-style(var(--main-text-color), 26px, 28px, 700);
+      span {
+        color: var(--main-active-btn);
+      }
+    }
+    .hero_items_btn {
+      margin: 68px 0 62px 0;
+    }
+  }
+  .hero_items_field_adaptive {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .hero_items {
+      max-width: 100%;
+      padding-top: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h1 {
+        @include text-style(var(--main-text-color), 26px, 28px, 700);
+        max-width: 308px;
+      }
+      h3 {
+        @include text-style(var(--main-text-color), 18px, 24px, 500);
+      }
+      .hero_item_socials_adaptive {
+        margin-top: 38px;
+      }
+      .hero_items_btn {
+        display: none;
+      }
+    }
+    .hero_items_field_adaptive {
+      display: flex;
+      position: absolute;
+      z-index: 4;
+      bottom: 62px;
+      left: 0;
+      right: 0;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

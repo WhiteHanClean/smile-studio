@@ -10,6 +10,17 @@
   }
   a {
     margin-right: 20px;
+    svg {
+      path {
+        fill: #fff;
+        transition: 0.2s;
+      }
+    }
+    svg:hover {
+      path {
+        fill: var(--main-active-btn);
+      }
+    }
   }
   a:last-child {
     margin-right: 0;

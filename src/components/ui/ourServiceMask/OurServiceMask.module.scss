@@ -1,0 +1,40 @@
+@import "../../../app/variables";
+
+.img_mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 2px;
+  background: linear-gradient(180deg, #171a2d7b 0%, #4b55937d 100%);
+  border-radius: 32px;
+  transition: 0.3s;
+  .img_mask_field {
+    display: none;
+    opacity: 0;
+  }
+}
+
+.img_mask:hover {
+  border: 3px solid #39cca9;
+  background: #324064de;
+  .img_mask_field {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    h2 {
+      @include text-style(var(--main-active-btn), 18px, 24px, 500);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h3 {
+        @include text-style(var(--main-text-color), 15px, 21px, 700);
+    }
+  }
+}
