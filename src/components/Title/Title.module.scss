@@ -1,0 +1,25 @@
+@import "../../app/variables";
+
+.title_content {
+  margin-top: 100px;
+  text-align: center;
+  margin: 0 auto;
+  h2 {
+    @include text-style(var(--main-text-color), 52px, 56px, 700);
+    margin-bottom: 24px;
+  }
+  p {
+    @include text-style(var(--main-text-color), 26px, 28px, 700);
+  }
+}
+
+@media (max-width: 500px) {
+  .title_content {
+    h2 {
+      @include text-style(var(--main-text-color), 26px, 28px, 700);
+    }
+    p {
+      @include text-style(var(--main-text-color), 20px, 28px, 600);
+    }
+  }
+}
