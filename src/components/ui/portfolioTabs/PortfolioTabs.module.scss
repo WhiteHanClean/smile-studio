@@ -1,0 +1,65 @@
+@import "../../../app/variables";
+
+.portfolio_tabs {
+  overflow: hidden;
+  .portfolio_tabs_overflow {
+    display: flex;
+    overflow: auto;
+    gap: 16px;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      @include text-style(var(--main-text-color), 15px, 21px, 700);
+      min-width: 183px;
+      height: 63px;
+      border: 2px solid #324064;
+      border-radius: 100px;
+      transition: 0.2s;
+    }
+    .active {
+      min-width: 183px;
+      height: 63px;
+      border: none;
+      background: linear-gradient(
+        180deg,
+        var(--main-text-color-first) 0%,
+        var(--main-text-color-second) 100%
+      );
+    }
+  }
+}
+
+.portfolio_tabs_overflow::-webkit-scrollbar {
+  display: none;
+}
+
+.portfolio_tabs_overflow {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  .portfolio_tabs {
+    .portfolio_tabs_overflow {
+      button {
+        @include text-style(var(--main-text-color), 14px, 14px, 400);
+        min-width: 140px;
+        height: 40px;
+        border: 2px solid #324064;
+        border-radius: 100px;
+      }
+      .active {
+        min-width: 140px;
+        height: 40px;
+        border: none;
+        background: linear-gradient(
+          180deg,
+          var(--main-text-color-first) 0%,
+          var(--main-text-color-second) 100%
+        );
+      }
+    }
+  }
+}

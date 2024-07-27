@@ -38,3 +38,18 @@
     }
   }
 }
+
+
+@media (max-width: 1075px) {
+  .img_mask:hover {
+    .img_mask_field {
+      padding: 14px;
+      h2 {
+        @include text-style(var(--main-active-btn), 15px, 24px, 500);
+      }
+      h3 {
+        @include text-style(var(--main-text-color), 12px, 24px, 500);
+      }
+    }
+  }
+}

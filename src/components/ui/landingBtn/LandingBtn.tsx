@@ -3,7 +3,7 @@ import s from "./LandingBtn.module.scss"
 import classNames from "classnames";
 
 interface btnProps {
-  nameBtn: string;
+  nameBtn?: string | "Ok";
   iconBtn?: React.ReactNode;
   className?: string;
 }

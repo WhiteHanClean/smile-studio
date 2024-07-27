@@ -1,0 +1,72 @@
+.landing_carousel {
+  :global {
+    .ant-carousel {
+      .slick-slider {
+        .slick-prev {
+          border: 1px solid var(--main-active-btn);
+          opacity: 1;
+          color: var(--main-active-btn);
+          width: 56px;
+          height: 56px;
+          border-radius: 100%;
+          background: linear-gradient(180deg, #171a2de8 0%, #4b5593e3 100%);
+        }
+        .slick-prev::after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 4px;
+          margin: auto auto;
+          width: 18px;
+          height: 18px;
+          border-inline-width: 4px 0;
+          border-block-width: 4px 0;
+          border-radius: 3px;
+        }
+        .slick-next {
+          border: 1px solid var(--main-active-btn);
+          opacity: 1;
+          color: var(--main-active-btn);
+          width: 56px;
+          height: 56px;
+          border-radius: 100%;
+          background: linear-gradient(180deg, #171a2de8 0%, #4b5593e3 100%);
+        }
+        .slick-next::after {
+          position: absolute;
+          top: 0;
+          right: 4px;
+          bottom: 0;
+          left: 0;
+          margin: auto auto;
+          width: 18px;
+          height: 18px;
+          border-inline-width: 4px 0;
+          border-block-width: 4px 0;
+          border-radius: 3px;
+        }
+        .slick-dots-bottom {
+          bottom: -24px;
+        }
+        .slick-dots {
+          li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin-inline: 5px;
+            button {
+              height: 100%;
+              border-radius: 100%;
+            }
+          }
+          .slick-active {
+            button {
+                background: var(--main-active-btn);
+            }
+          }
+        }
+      }
+    }
+  }
+}
