@@ -8,71 +8,39 @@
   padding: 37px 0;
   background: transparent;
   transition: background 0.3s ease;
-  
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(25, 28, 48, 0.99) 12.51%,
-      rgba(25, 28, 48, 0.767) 70.55%,
-      rgba(75, 85, 147, 0) 100.6%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-  }
-
-  &.scrolled::after {
-    opacity: 1;
-  }
-
   .header_items {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    z-index: 1000;
     .header_items_burger {
       display: none;
-
       .header_items_burger_nav {
         height: 152px;
         flex-wrap: wrap;
         margin-bottom: 82px;
         column-gap: 38px;
       }
-
       .header_items_burger_btn {
         width: 172px;
         padding: 14px 8px;
         margin-top: 56px;
       }
     }
-
     .header_items_btn {
       width: 172px;
       padding: 14px 8px;
     }
-
     .header_items_phone {
       display: none;
-
       .header_items_phone_drawer {
         :global {
           .ant-drawer {
             .ant-drawer-content-wrapper {
               width: 100% !important;
             }
-
             .ant-drawer-header {
               .ant-drawer-header-title {
                 padding: 20px;
-
                 .ant-drawer-close {
                   align-self: flex-start;
                   margin-inline-end: 0;
@@ -81,16 +49,13 @@
             }
           }
         }
-
         h3 {
           @include text-style(var(--main-text-color), 18px, 24px, 500);
           margin-bottom: 8px;
         }
-
         ul {
           list-style-type: disc;
           margin-left: 24px;
-
           li {
             @include text-style(var(--main-text-color), 14px, 21px, 400);
             line-height: 1.6;
@@ -99,6 +64,29 @@
       }
     }
   }
+}
+
+.header::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 28, 48, 0.99) 12.51%,
+    rgba(25, 28, 48, 0.767) 70.55%,
+    rgba(75, 85, 147, 0) 100.6%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.scrolled::after {
+  opacity: 1;
 }
 
 @media (max-width: 1134px) {
