@@ -56,7 +56,7 @@ const LandingDrawer: FC<drawerProps> = ({
               getContainer={false}
               footer={
                 <>
-                  <p>{footerTitle}</p> <button>{footerBtn}</button>
+                  <p>{footerTitle}</p> <>{footerBtn}</>
                 </>
               }
             >

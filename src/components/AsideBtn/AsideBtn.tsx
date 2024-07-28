@@ -1,3 +1,4 @@
+"use client";
 import AdsideBtnBackground from "@/icons/AsideBtnBackground/AdsideBtnBackground";
 import AsideBtnIcon from "@/icons/AsideBtnIcon/AsideBtnIcon";
 import AsideBtnMask from "@/icons/AsideBtnMask/AsideBtnMask";

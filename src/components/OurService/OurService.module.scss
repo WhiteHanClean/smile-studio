@@ -16,6 +16,9 @@
       max-width: 745px;
       span {
         color: var(--main-active-btn);
+        background-image: linear-gradient(180deg, #39CCA9 0%, #69BBE2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
   }
