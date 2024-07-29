@@ -2,7 +2,7 @@
 import BurgerIcon from "@/icons/BurgerIcon/BurgerIcon";
 import LogoIcon from "@/icons/LogoIcon/LogoIcon";
 import PhoneIcon from "@/icons/PhoneIcon/PhoneIcon";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Container from "../Container/Container";
 import LandingBtn from "../ui/landingBtn/LandingBtn";
 import LandingDrawer from "../ui/landingDrawer/LandingDrawer";
@@ -12,8 +12,26 @@ import s from "./Header.module.scss";
 import Image from "next/image";
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
   return (
-    <header className={s.header}>
+    <header className={`${s.header} ${isScrolled ? s.scrolled : ""}`}>
       <Container>
         <div className={s.header_items}>
           <div className={s.header_items_burger}>

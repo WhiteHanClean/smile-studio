@@ -1,0 +1,31 @@
+.aside_btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  cursor: pointer;
+  transition: .2s;
+  .aside_btn_items {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .aside_btn_field {
+      position: absolute;
+      width: 92px;
+      height: 92px;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .aside_btn_item {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.aside_btn:hover {
+  bottom: 50px
+}

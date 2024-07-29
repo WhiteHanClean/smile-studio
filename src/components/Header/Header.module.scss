@@ -6,12 +6,8 @@
   left: 0;
   right: 0;
   padding: 37px 0;
-  background: linear-gradient(
-    180deg,
-    rgba(25, 28, 48, 0.97) 12.51%,
-    rgba(25, 28, 48, 0.6) 68.55%,
-    rgba(75, 85, 147, 0) 100.6%
-  );
+  background: transparent;
+  transition: background 0.3s ease;
   .header_items {
     display: flex;
     justify-content: space-between;
@@ -68,6 +64,29 @@
       }
     }
   }
+}
+
+.header::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 28, 48, 0.99) 12.51%,
+    rgba(25, 28, 48, 0.767) 70.55%,
+    rgba(75, 85, 147, 0) 100.6%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.scrolled::after {
+  opacity: 1;
 }
 
 @media (max-width: 1134px) {

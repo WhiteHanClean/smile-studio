@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import s from "./Hero.module.scss";
 import Image from "next/image";
@@ -6,44 +7,30 @@ import LandingBtn from "../ui/landingBtn/LandingBtn";
 import LandingSocial from "../ui/landingSocial/LandingSocial";
 import LandingSwiper from "../ui/landingSwiper/LandingSwiper";
 import { EffectFade, Navigation, Autoplay } from "swiper/modules";
+import { heroImages } from "../utils/mocks/heroMocks";
 
 const Hero = () => {
   return (
     <section className={s.hero}>
       <div className={s.hero_background}>
-      <LandingSwiper
-        effect="fade"
-        navigation={false}
-        pagination={false}
-        spaceBeetwen={30}
-        modules={[Autoplay, EffectFade, Navigation]}
-        autoplayDelay={5000}
-      >
-        <Image
-          src={"/hero/heroFirst.svg"}
-          alt={"hero"}
-          width={100}
-          height={100}
-        />
-        <Image
-          src={"/hero/heroSecond.svg"}
-          alt={"hero"}
-          width={100}
-          height={100}
-        />
-        <Image
-          src={"/hero/heroThird.svg"}
-          alt={"hero"}
-          width={100}
-          height={100}
-        />
-        <Image
-          src={"/hero/heroFourth.svg"}
-          alt={"hero"}
-          width={100}
-          height={100}
-        />
-      </LandingSwiper>
+        <LandingSwiper
+          effect="fade"
+          navigation={false}
+          pagination={false}
+          spaceBeetwen={30}
+          modules={[Autoplay, EffectFade, Navigation]}
+          autoplayDelay={5000}
+        >
+          {heroImages.map((image, index) => (
+            <Image
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              width={100}
+              height={100}
+            />
+          ))}
+        </LandingSwiper>
       </div>
       <div className={s.hero_mask}></div>
       <Container>
