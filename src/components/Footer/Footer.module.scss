@@ -20,6 +20,22 @@
   .footer {
     .footer_nav {
       flex-direction: column;
+
+      gap: 24px;
+      .footer_nav_adaptive {
+        display: block;
+      }
+    }
+    .footer_social {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 778px) {
+  .footer {
+    .footer_nav {
+      flex-direction: column;
       :global {
         .ant-space {
           flex-direction: column;
