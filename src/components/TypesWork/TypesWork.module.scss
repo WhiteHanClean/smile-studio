@@ -33,9 +33,6 @@
             .slick-list {
               clip-path: inset(0 -200% 0 0);
               overflow: visible;
-              .slick-track {
-                
-              }
             }
             .slick-prev {
               top: 35%;
@@ -123,7 +120,7 @@
               margin-bottom: 50px;
             }
             .types_btn {
-              position: static;
+              position: relative;
               z-index: 2;
             }
           }
@@ -145,14 +142,16 @@
           }
         }
       }
-      .first_card {
-        .types_work_carousel_card_img {
-          border: 4px solid green;
-        }
-      }
       :global {
         .ant-carousel {
           .slick-slider {
+            .slick-list {
+              .slick-track {
+                .slick-slide {
+                  padding: 0 5px;
+                }
+              }
+            }
             .slick-next {
               top: 115%;
               width: 32px;

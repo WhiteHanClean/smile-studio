@@ -8,6 +8,7 @@ import Portfolio from "@/components/Portfolio/Portfolio";
 import AsideBtn from "@/components/AsideBtn/AsideBtn";
 import News from "@/components/News/News";
 import TypesWork from "@/components/TypesWork/TypesWork";
+import AboutUs from "@/components/AboutUs/AboutUs";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <TypesWork/>
       <AsideBtn/>
       <OurService/>
+      <AboutUs/>
       <Portfolio/>
       <News/>
       <Footer />

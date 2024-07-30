@@ -93,7 +93,7 @@ const TypesWork = () => {
           <div className={s.types_work_carousel_bottom}>
             <Carousel
               asNavFor={nav}
-              touchMove={false}
+              touchMove={true}
               dots={false}
               draggable={true}
               arrows

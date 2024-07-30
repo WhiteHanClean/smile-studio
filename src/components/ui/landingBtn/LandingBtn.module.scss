@@ -1,19 +1,42 @@
 @import "../../../app/variables";
 
 .landing_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 213px;
-    height: 46px;
-    padding: 14px 20px;
-    background: linear-gradient(180deg, var(--main-text-color-first) 0%, var(--main-text-color-second) 100%);
-    border-radius: 12px;
-    @include text-style(var(--main-text-color-third), 14px, 28px, 600);
-    transition: background 0.3s ease;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 213px;
+  min-height: 46px;
+  max-height: 46px;
+  padding: 14px 20px;
+  position: relative;
+  background: linear-gradient(180deg, var(--main-text-color-first) 0%, var(--main-text-color-second) 100%);
+  border-radius: 12px;
+  @include text-style(var(--main-text-color-third), 14px, 28px, 600);
+  overflow: hidden;
+  transition: color 0.2s ease;
 
-.landing_btn:hover {
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(180deg, var(--main-active-btn) 0%, var(--main-active-btn) 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
 }
