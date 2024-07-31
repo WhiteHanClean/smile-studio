@@ -1,0 +1,119 @@
+.customer_reviews {
+  .title_customer_reviews {
+    margin-top: 112px;
+    max-width: 718px;
+  }
+  .customer_reviews_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 88px;
+  }
+  .customer_reviews_corusel {
+    display: none;
+
+    :global {
+      .ant-carousel {
+        .slick-slider {
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                padding: 0 5px;
+              }
+            }
+          }
+          .slick-next {
+            top: 115%;
+            width: 32px;
+            height: 32px;
+            background: none;
+            transition: 0.2s;
+            border: 2px solid var(--main-active-btn);
+            opacity: 1;
+            color: var(--main-active-btn);
+            border-radius: 100%;
+            background: none;
+          }
+          .slick-prev {
+            top: 115%;
+            width: 32px;
+            height: 32px;
+            background: none;
+            transition: 0.2s;
+            border: 2px solid var(--main-active-btn);
+            opacity: 1;
+            color: var(--main-active-btn);
+            border-radius: 100%;
+            background: none;
+            inset-inline-end: 54px;
+            inset-inline-start: inherit;
+            transition: 0.2s;
+          }
+          .slick-next::after {
+            position: absolute;
+            top: 0;
+            right: 4px;
+            bottom: 0;
+            left: 0;
+            margin: auto auto;
+            width: 12px;
+            height: 12px;
+            border-inline-width: 3px 0;
+            border-block-width: 3px 0;
+            border-radius: 2px;
+          }
+          .slick-prev::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 4px;
+            margin: auto auto;
+            width: 12px;
+            height: 12px;
+            border-inline-width: 3px 0;
+            border-block-width: 3px 0;
+            border-radius: 2px;
+          }
+          .slick-disabled {
+            color: #324064;
+            border: 1px solid #324064;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1125px) {
+  .customer_reviews {
+    .customer_reviews_content {
+      display: none;
+    }
+    .customer_reviews_corusel {
+      display: block;
+      margin-top: 50px;
+
+      .reviews_carousel {
+        margin-top: 50px;
+        .reviews_card {
+          max-width: 90%;
+          min-height: 247px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 495px) {
+  .customer_reviews {
+    .customer_reviews_corusel {
+      .reviews_carousel {
+        .reviews_card {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

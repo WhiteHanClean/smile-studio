@@ -1,0 +1,19 @@
+.input_landing {
+  border-radius: 20px;
+  padding: 24px 27px;
+  border: 1px solid var(--Add-color-Add-enable-color, #9094cd);
+  background: none !important;
+  color: #fff;
+}
+
+.input_landing:hover,
+.input_landing:active,
+.input_landing:focus {
+  background: none;
+  outline: none;
+  border: 1px solid var(--Main-color-Main-blue-gradient, #39cca9);
+}
+
+.input_landing:where {
+  background: none;
+}

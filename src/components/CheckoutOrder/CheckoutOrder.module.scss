@@ -1,0 +1,159 @@
+@import "../../app/variables";
+
+.checkout_order {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  .peop {
+    position: absolute;
+    right: -24px;
+    bottom: -16px;
+  }
+  .rob {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .checkout_order_img {
+    position: relative;
+    overflow: hidden;
+  }
+  .checkout_order_form {
+    padding-top: 72px;
+    padding-bottom: 50px;
+    max-width: 1180px;
+    margin: 0 auto;
+    border-radius: 32px;
+    border: 3px solid var(--Main-color-Main-blue-gradient, #39cca9);
+    background: var(
+      --filter,
+      linear-gradient(180deg, #171a2d 0%, #4b5593 100%)
+    );
+    .form {
+      margin: 0 auto;
+      margin-top: 82px;
+      max-width: 769px;
+
+      .form_input::placeholder {
+        color: var(--Add-color-Add-enable-color, #9094cd);
+      }
+    }
+    .forms_btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+
+      .form_btn {
+        width: 320px;
+        height: 46px;
+        border-radius: 12px;
+        background: #2d3568;
+        color: #fff;
+        margin: 0 auto;
+        border: none;
+        transition: 1s;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+
+      .form_btn:hover,
+      .form_btn:active {
+        color: #000;
+        border: none;
+        background: #51c4c6;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  .checkout_order_form_title {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+    h2 {
+      color: #fff;
+      font-family: "Nunito Sans";
+
+      @include text-style(var(--main-text-color), 52px, 56px, 700);
+      letter-spacing: -0.52px;
+      margin-bottom: 24px;
+    }
+    span {
+      color: #fff;
+      font-family: "Nunito Sans";
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+    }
+  }
+  .checkout_order_btn {
+    margin: 0 auto;
+    margin-top: 112px;
+    max-width: 213px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 1207px) {
+  .checkout_order {
+    overflow: hidden;
+    .checkout_order_img {
+      overflow: visible;
+      position: relative;
+    }
+    .peop {
+      position: absolute;
+      right: -100px;
+      bottom: -150px;
+    }
+    .rob {
+      position: absolute;
+      top: -70px;
+      left: -25px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .checkout_order {
+    overflow: hidden;
+    .checkout_order_img {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .rob {
+      width: 234px;
+      height: 232px;
+    }
+    .peop {
+      width: 234px;
+      height: 232px;
+      bottom: -100px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .checkout_order {
+    .checkout_order_form_title {
+      h2 {
+        @include text-style(var(--main-text-color), 26px, 28px, 700);
+      }
+      span {
+        @include text-style(var(--main-text-color), 20px, 28px, 600);
+      }
+    }
+    .checkout_order_img {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .rob {
+      width: 234px;
+      height: 232px;
+    }
+    .peop {
+      width: 234px;
+      height: 232px;
+      bottom: -100px;
+    }
+  }
+}

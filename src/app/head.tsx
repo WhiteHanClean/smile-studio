@@ -8,6 +8,10 @@ export default function Head() {
         content="Передовые зуботехнические решения от Smile Studio"
       />
       <link rel="icon" href="/favicon.ico" />
+      <script
+        src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"
+        type="text/javascript"
+      ></script>
     </>
   );
 }

@@ -1,0 +1,15 @@
+@import "../../app/variables";
+
+.awards {
+  background: var(--filter, linear-gradient(0deg, #171a2d 0%, #4b5593 100%));
+  padding-top: 59px;
+
+  .awards_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+  }
+
+}

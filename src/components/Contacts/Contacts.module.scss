@@ -1,0 +1,48 @@
+@import "../../app/variables";
+
+.contacts {
+  margin-top: 81px;
+  margin-bottom: 38px;
+  .contacts_container {
+    .line {
+      height: 1px;
+      background: #324064;
+      margin-bottom: 41px;
+    }
+    .contacts_content {
+      display: flex;
+      .contacts_content_description {
+        .contacts_title {
+          text-align: start;
+        }
+        .contacts_title_mobile {
+          display: none;
+        }
+      }
+
+      .contacts_content_map {
+        position: relative;
+
+        .contacts_content_cart {
+          width: 312px;
+          height: 312px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .contact_btn {
+          @include text-style(var(  --main-text-color), 15px, 28px, 600);
+          font-family: "Nunito Sans";
+
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+          bottom: 25px;
+          z-index: 5;
+        }
+      }
+    }
+  }
+}

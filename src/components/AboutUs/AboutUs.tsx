@@ -31,7 +31,7 @@ const AboutUs = () => {
                   src={card.backgroundImage}
                   width={100}
                   height={100}
-                  alt=""
+                  alt="backgroundImage"
                 />
               </div>
               <div className={s.carousel_card_left}>
