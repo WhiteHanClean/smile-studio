@@ -3,13 +3,85 @@
 .awards {
   background: var(--filter, linear-gradient(0deg, #171a2d 0%, #4b5593 100%));
   padding-top: 59px;
-
-  .awards_content{
+  margin-top: 45px;
+  overflow: hidden;
+  .awards_content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
-    
+    gap: 20px;
+    .awards_card {
+      position: relative;
+      margin-top: 50px;
+      min-width: 163px;
+      max-width: 237px;
+      flex: 1 1 calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+      .awards_card_glow {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(
+          50% 50% at 50% 50%,
+          #63dbff,
+          #cfd5fc,
+          #999999 100%
+        );
+        mix-blend-mode: overlay;
+        filter: blur(15px);
+        transform: translate(-50%, -50%);
+        animation: glow 2s infinite alternate;
+      }
+      p {
+        @include text-style(var(--main-text-color), 19px, 28px, 600);
+        text-align: center;
+        margin-top: 45px;
+        span {
+          color: var(--main-active-btn);
+          background-image: linear-gradient(180deg, #39cca9 0%, #69bbe2 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
   }
+}
 
+@media (max-width: 520px) {
+  .awards {
+    .awards_content {
+      .awards_card {
+        p {
+          @include text-style(var(--main-text-color), 14px, 19px, 600);
+          margin-top: 0;
+        }
+        .awards_card_glow {
+          width: 201px;
+          height: 201px;
+          top: 39%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }

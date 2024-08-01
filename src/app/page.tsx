@@ -15,6 +15,7 @@ import Benefits from "@/components/Benefits/Benefits";
 import Pricing from "@/components/Pricing/Pricing";
 import Awards from "@/components/Awards/Awards";
 import Contacts from "@/components/Contacts/Contacts";
+import Tech from "@/components/Tech/Tech";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <OurService/>
       <AboutUs/>
       <Benefits />
+      <Tech/>
       <CustomerReviews />
       <Pricing/>
       <Portfolio/>

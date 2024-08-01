@@ -11,51 +11,54 @@ const Awards = () => {
     <section className={s.awards}>
       <Container>
         <Title title="Награды" description="Работаем и побеждаем!"></Title>
-
         <div className={s.awards_content}>
           <div className={s.awards_card}>
+            <div className={s.awards_card_glow}></div>
             <Image
               width={246}
-              height={334}
+              height={302}
               src={"/awards/one.svg"}
-              alt="one"
-            ></Image>
-
-            <p>Официальный партнер Nobel Biocare</p>
+              alt="one.svg"
+            />
+            <p>
+              Официальный партнер <span>Nobel Biocare</span>
+            </p>
           </div>
-
           <div className={s.awards_card}>
+            <div className={s.awards_card_glow}></div>
             <Image
-              width={246}
-              height={334}
+              width={240}
+              height={297}
               src={"/awards/two.svg"}
-              alt="one"
-            ></Image>
-
-            <p>Официальный партнер Nobel Biocare</p>
+              alt="two.svg"
+            />
+            <p>
+              Лучшее <span>инновационное</span> открытие года
+            </p>
           </div>
-          
-
           <div className={s.awards_card}>
+            <div className={s.awards_card_glow}></div>
             <Image
-              width={246}
-              height={334}
+              width={211}
+              height={292}
               src={"/awards/three.svg"}
-              alt="one"
-            ></Image>
-
-            <p>Официальный партнер Nobel Biocare</p>
+              alt="three.svg"
+            />
+            <p>
+              <span>100 лучших</span> медицинских организаций
+            </p>
           </div>
-
           <div className={s.awards_card}>
+            <div className={s.awards_card_glow}></div>
             <Image
               width={246}
-              height={334}
+              height={302}
               src={"/awards/four.svg"}
-              alt="one"
-            ></Image>
-
-            <p>Официальный партнер Nobel Biocare</p>
+              alt="four.svg"
+            />
+            <p>
+              Официальный партнер <span>Nobel Biocare</span>
+            </p>
           </div>
         </div>
       </Container>
