@@ -25,7 +25,7 @@ const TypesWork = () => {
   };
 
   return (
-    <section className={s.types_work}>
+    <section id="works" className={s.types_work}>
       <Title
         title="Виды работ"
         description="Мы предлагаем широкий спектр услуг"
@@ -75,8 +75,9 @@ const TypesWork = () => {
               {typesSliderTop.map((slide, index) => (
                 <div key={index} className={s.types_work_carousel_card}>
                   <div
-                    className={`${s.types_work_carousel_card_img} ${currentSlide === index ? s.active_card : ""
-                      }`}
+                    className={`${s.types_work_carousel_card_img} ${
+                      currentSlide === index ? s.active_card : ""
+                    }`}
                   >
                     <Image
                       src={slide.src}
@@ -101,11 +102,24 @@ const TypesWork = () => {
             >
               {typesSliderBottom.map((slide, index) => (
                 <div key={index} className={s.types_work_carousel_card}>
-                  <Image src={slide.background} width={172} height={172} alt={`background-${index}`} />
+                  <Image
+                    src={slide.background}
+                    width={172}
+                    height={172}
+                    alt={`background-${index}`}
+                  />
                   <div className={s.types_work_carousel_card_items}>
                     <div className={s.types_work_carousel_card_left}>
-                      <Image src={slide.image} width={172} height={172} alt={`image-${index}`} />
-                      <LandingBtn className={s.types_btn} nameBtn="Заказать консультацию" />
+                      <Image
+                        src={slide.image}
+                        width={172}
+                        height={172}
+                        alt={`image-${index}`}
+                      />
+                      <LandingBtn
+                        className={s.types_btn}
+                        nameBtn="Заказать консультацию"
+                      />
                     </div>
                     <div className={s.types_work_carousel_card_right}>
                       <h3>{slide.title}</h3>

@@ -8,7 +8,7 @@ import { aboutUsMocks } from "../utils/mocks/aboutUsMocks";
 
 const AboutUs = () => {
   return (
-    <section className={s.about}>
+    <section id="about" className={s.about}>
       <Container>
         <LandingCarousel
           arrows={false}

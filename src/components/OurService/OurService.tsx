@@ -17,7 +17,7 @@ const OurService = () => {
   };
 
   return (
-    <section className={s.our_service}>
+    <section id="schedule" className={s.our_service}>
       <Container>
         <div className={s.our_service_title}>
           <h2>Наши услуги</h2>

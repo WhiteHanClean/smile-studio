@@ -31,7 +31,7 @@ const Benefits = () => {
     },
   ];
   return (
-    <section className={s.benefits}>
+    <section id="cooperation" className={s.benefits}>
       <Container>
         <Title
           title="Преимущества сотрудничества "

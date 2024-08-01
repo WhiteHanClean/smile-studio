@@ -14,7 +14,7 @@ const Footer = () => {
       <Container>
         <div className={s.footer_nav}>
           <LogoIcon />
-          <LandingNav />
+          <LandingNav  position="footer"/>
           <div className={s.footer_nav_adaptive}>
             <LandingSocial className={s.footer_nav_adaptive_social}/>
           </div>

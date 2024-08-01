@@ -21,17 +21,17 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <Hero/>
-      <Awards/>
       <TypesWork/>
+      <Awards/>
       <AsideBtn/>
       <OurService/>
       <AboutUs/>
-      <Portfolio/>
-      <News/>
       <Benefits />
       <CustomerReviews />
       <Pricing/>
+      <Portfolio/>
       <CheckoutOrder />
+      <News/>
       <Contacts/>
       <Footer />
     </main>

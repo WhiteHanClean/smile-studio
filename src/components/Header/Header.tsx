@@ -45,6 +45,7 @@ const Header = () => {
               <LandingNav
                 type="vertical"
                 className={s.header_items_burger_nav}
+                position="header"
               />
               <LandingSocial />
               <LandingBtn

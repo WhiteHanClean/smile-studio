@@ -11,7 +11,7 @@ import { portfolioCard } from "../utils/mocks/portfolioMocks";
 
 const Portfolio = () => {
   return (
-    <section className={s.portfolio}>
+    <section id="portfolio" className={s.portfolio}>
       <Container>
         <Title
           classProps={s.portfolio_title}

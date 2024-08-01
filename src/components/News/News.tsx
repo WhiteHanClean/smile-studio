@@ -11,7 +11,7 @@ import s from "./News.module.scss";
 
 const News = () => {
   return (
-    <section className={s.news}>
+    <section id="news" className={s.news}>
       <Container>
         <Title
           classProps={s.news_title}

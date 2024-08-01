@@ -1,0 +1,17 @@
+export const landingNavRoutes = [
+    { name: 'Работы', path: '#works', location: 'header' },
+    { name: 'О нас', path: '#about', location: 'header' },
+    { name: 'Услуги', path: '#schedule', location: 'header' },
+    { name: 'Сотрудничество', path: '#cooperation', location: 'header' },
+    { name: 'Технологии', path: '#tech', location: 'header' },
+    { name: 'Портфолио', path: '#portfolio', location: 'header' },
+    { name: 'Новости', path: '#news', location: 'header' },
+    { name: 'Контакты', path: '#contacts', location: 'header' },
+    { name: 'О нас', path: '#about', location: 'footer' },
+    { name: 'Команда', path: '#team', location: 'footer' },
+    { name: 'Технологии', path: '#tech', location: 'footer' },
+    { name: 'Прайс-лист', path: '#price-list', location: 'footer' },
+    { name: 'Портфолио', path: '#portfolio', location: 'footer' },
+    { name: 'Сотрудничество', path: '#cooperation', location: 'footer' },
+    { name: 'Контакты', path: '#contacts', location: 'footer' },
+  ];

@@ -3,23 +3,24 @@ import { Space } from "antd";
 import Link from "next/link";
 import s from "./LandingNav.module.scss";
 import classNames from "classnames";
+import { landingNavRoutes } from "../mocks/landingNavMocks";
 
 interface navProps {
   className?: string;
   type?: "horizontal" | "vertical";
+  position?: "header" | "footer";
 }
 
-const LandingNav = ({ className, type }: navProps) => {
+const LandingNav = ({ className, type, position = "header" }: navProps) => {
   return (
     <Space className={classNames(s.landing_nav, className)} direction={type}>
-      <Link href="#">Работы</Link>
-      <Link href="#">О нас</Link>
-      <Link href="#">Услуги</Link>
-      <Link href="#">Сотрудничество</Link>
-      <Link href="#">Технологии</Link>
-      <Link href="#">Портфолио</Link>
-      <Link href="#">Новости</Link>
-      <Link href="#">Контакты</Link>
+      {landingNavRoutes
+        .filter((route) => route.location === position)
+        .map((route) => (
+          <Link href={route.path} key={route.path}>
+            {route.name}
+          </Link>
+        ))}
     </Space>
   );
 };

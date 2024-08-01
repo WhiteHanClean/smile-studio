@@ -131,6 +131,15 @@
     }
     :global {
       .ant-carousel {
+        .slick-slider {
+          .slick-list {
+            .slick-track {
+              .slick-slide {
+                padding: 0 5px;
+              }
+            }
+          }
+        }
         .slick-next {
           top: 44%;
         }
