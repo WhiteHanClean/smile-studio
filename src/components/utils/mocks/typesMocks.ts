@@ -1,25 +1,28 @@
 export const typesSliderTop = [
-  { src: "/typesWork/typesFirst.svg", title: "Основные виды работ" },
+  { src: "/typesWork/typesFirst.jpg", title: "Основные виды работ" },
   {
-    src: "/typesWork/typesSecond.svg",
+    src: "/typesWork/typesSecond.jpg",
     title: "Изготовление зубных коронок и мостов",
   },
   {
-    src: "/typesWork/typesThird.svg",
+    src: "/typesWork/typesThird.jpg",
     title: "Керамические вкладки и накладки",
   },
   {
-    src: "/typesWork/typesFourth.svg",
+    src: "/typesWork/typesFourth.jpg",
     title: "Полные протезы на каркасах из титана и диоксид циркония",
   },
-  { src: "/typesWork/typesFifth.svg", title: "Облицовка керамикой" },
-  { src: "/typesWork/typesFourth.svg", title: "Облицовка керамикой" },
+  { src: "/typesWork/typesFifth.jpg", title: "Облицовка керамикой" },
+  { src: "/typesWork/typesSix.jpg", title: "Облицовка керамикой" },
+  { src: "/typesWork/typesSeven.jpg", title: "Облицовка керамикой" },
+  { src: "/typesWork/typesEight.jpg", title: "Облицовка керамикой" },
+  { src: "/typesWork/typesNine.jpg", title: "Облицовка керамикой" },
 ];
 
 export const typesSliderBottom = [
   {
     background: "/typesWork/background.svg",
-    image: "/typesWork/typesFirst.svg",
+    image: "/typesWork/typesFirst.jpg",
     title: "Основные виды работ",
     items: [
       "Изготовление зубных коронок и мостов",
@@ -37,7 +40,7 @@ export const typesSliderBottom = [
   },
   {
     background: "/typesWork/background.svg",
-    image: "/typesWork/typesSecond.svg",
+    image: "/typesWork/typesSecond.jpg",
     title: "Основные виды работ",
     items: [
       "Изготовление зубных коронок и мостов",
@@ -55,7 +58,7 @@ export const typesSliderBottom = [
   },
   {
     background: "/typesWork/background.svg",
-    image: "/typesWork/typesThird.svg",
+    image: "/typesWork/typesThird.jpg",
     title: "Основные виды работ",
     items: [
       "Изготовление зубных коронок и мостов",
@@ -73,7 +76,7 @@ export const typesSliderBottom = [
   },
   {
     background: "/typesWork/background.svg",
-    image: "/typesWork/typesFourth.svg",
+    image: "/typesWork/typesFourth.jpg",
     title: "Основные виды работ",
     items: [
       "Изготовление зубных коронок и мостов",
@@ -91,7 +94,7 @@ export const typesSliderBottom = [
   },
   {
     background: "/typesWork/background.svg",
-    image: "/typesWork/typesFifth.svg",
+    image: "/typesWork/typesFifth.jpg",
     title: "Основные виды работ",
     items: [
       "Изготовление зубных коронок и мостов",
@@ -109,7 +112,61 @@ export const typesSliderBottom = [
   },
   {
     background: "/typesWork/background.svg",
-    image: "/typesWork/typesFourth.svg",
+    image: "/typesWork/typesSix.jpg",
+    title: "Основные виды работ",
+    items: [
+      "Изготовление зубных коронок и мостов",
+      "Керамические вкладки и накладки",
+      "Полные протезы на каркасах из титана и диоксида циркония",
+      "Облицовка керамикой",
+      "Производство частичных и полных съемных протезов",
+      "Изготовление виниров",
+      "Изготовление индивидуальных кап для лечения бруксизма (скрежетание зубами)",
+      "Производство диагностических моделей в рамках планирования лечения",
+      "3D печать для создания протезов, моделей и хирургических шаблонов",
+      "Цифровое моделирование улыбки и планирование ортодонтического лечения",
+      "Протезирование на базальных имплантах",
+    ],
+  },
+  {
+    background: "/typesWork/background.svg",
+    image: "/typesWork/typesSeven.jpg",
+    title: "Основные виды работ",
+    items: [
+      "Изготовление зубных коронок и мостов",
+      "Керамические вкладки и накладки",
+      "Полные протезы на каркасах из титана и диоксида циркония",
+      "Облицовка керамикой",
+      "Производство частичных и полных съемных протезов",
+      "Изготовление виниров",
+      "Изготовление индивидуальных кап для лечения бруксизма (скрежетание зубами)",
+      "Производство диагностических моделей в рамках планирования лечения",
+      "3D печать для создания протезов, моделей и хирургических шаблонов",
+      "Цифровое моделирование улыбки и планирование ортодонтического лечения",
+      "Протезирование на базальных имплантах",
+    ],
+  },
+  {
+    background: "/typesWork/background.svg",
+    image: "/typesWork/typesEight.jpg",
+    title: "Основные виды работ",
+    items: [
+      "Изготовление зубных коронок и мостов",
+      "Керамические вкладки и накладки",
+      "Полные протезы на каркасах из титана и диоксида циркония",
+      "Облицовка керамикой",
+      "Производство частичных и полных съемных протезов",
+      "Изготовление виниров",
+      "Изготовление индивидуальных кап для лечения бруксизма (скрежетание зубами)",
+      "Производство диагностических моделей в рамках планирования лечения",
+      "3D печать для создания протезов, моделей и хирургических шаблонов",
+      "Цифровое моделирование улыбки и планирование ортодонтического лечения",
+      "Протезирование на базальных имплантах",
+    ],
+  },
+  {
+    background: "/typesWork/background.svg",
+    image: "/typesWork/typesNine.jpg",
     title: "Основные виды работ",
     items: [
       "Изготовление зубных коронок и мостов",

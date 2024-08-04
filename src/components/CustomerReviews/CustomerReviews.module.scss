@@ -1,4 +1,7 @@
 .customer_reviews {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
   .title_customer_reviews {
     margin-top: 112px;
     max-width: 718px;
@@ -8,6 +11,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 88px;
+    height: 600px;
+    overflow: auto;
+    padding: 30px 4px 0 24px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-text-color-first) #324064;
   }
   .customer_reviews_corusel {
     display: none;

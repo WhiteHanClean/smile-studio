@@ -27,8 +27,23 @@
       }
     }
     .header_items_btn {
-      width: 172px;
-      padding: 14px 8px;
+      position: relative;
+      .header_items_btn_glow {
+        z-index: 0;
+        position: absolute;
+        height: 47px;
+        width: 174px;
+        border-radius: 100%;
+        background: linear-gradient(180deg, #39cca9 0%, #bbe9ff 100%);
+        mix-blend-mode: unset;
+        filter: blur(18px);
+        animation: glow 3s infinite alternate;
+      }
+      .header_items_button {
+        width: 172px;
+        padding: 14px 8px;
+        color: #fff;
+      }
     }
     .header_items_phone {
       display: none;
@@ -105,5 +120,16 @@
         display: block;
       }
     }
+  }
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.04);
   }
 }

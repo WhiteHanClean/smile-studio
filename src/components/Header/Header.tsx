@@ -29,7 +29,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   return (
     <header className={`${s.header} ${isScrolled ? s.scrolled : ""}`}>
       <Container>
@@ -57,11 +57,14 @@ const Header = () => {
           </div>
           <LogoIcon />
           <LandingNav className={s.header_items_nav} type="horizontal" />
-          <LandingBtn
-            iconBtn={<PhoneIcon width="18" height="18" />}
-            className={s.header_items_btn}
-            nameBtn="+7 (499) 444 12 78"
-          />
+          <div className={s.header_items_btn}>
+            <div className={s.header_items_btn_glow}></div>
+            <LandingBtn
+              iconBtn={<PhoneIcon width="18" height="18" />}
+              className={s.header_items_button}
+              nameBtn="+7 (499) 444 12 78"
+            />
+          </div>
           <div className={s.header_items_phone}>
             <LandingDrawer
               className={s.header_items_phone_drawer}

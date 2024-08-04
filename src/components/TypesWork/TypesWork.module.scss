@@ -5,7 +5,7 @@
   overflow: hidden;
   .types_work_carousels {
     .types_work_carousel_top {
-      margin: 70px 0 104px 0;
+      margin: 70px 0 35px 0;
       .types_work_carousel_card {
         display: flex !important;
         align-items: center;
@@ -20,6 +20,8 @@
           border-radius: 100%;
           padding: 7px;
           img {
+            width: 135px;
+            height: 135px;
             border-radius: 100%;
           }
         }
@@ -30,11 +32,9 @@
       :global {
         .ant-carousel {
           .slick-slider {
-            .slick-list {
-              overflow: visible;
-            }
+            cursor: grab;
             .slick-prev {
-              top: 35%;
+              top: 31%;
               border: 1px solid var(--main-active-btn);
               opacity: 1;
               color: var(--main-active-btn);
@@ -57,7 +57,7 @@
               border-radius: 3px;
             }
             .slick-next {
-              top: 35%;
+              top: 31%;
               border: 1px solid var(--main-active-btn);
               opacity: 1;
               color: var(--main-active-btn);
@@ -144,6 +144,7 @@
       :global {
         .ant-carousel {
           .slick-slider {
+            cursor: grab;
             .slick-list {
               .slick-track {
                 .slick-slide {

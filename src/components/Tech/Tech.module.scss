@@ -38,6 +38,7 @@
     :global {
       .ant-carousel {
         .slick-slider {
+          cursor: grab;
           .slick-list {
             overflow: visible;
             .slick-track {
@@ -45,6 +46,8 @@
                 max-width: 576px;
                 padding: 0 48px;
                 transition: 0.5s;
+                transform: scale(1);
+                transform-origin: top center;
                 position: relative;
                 top: 0;
               }
@@ -55,7 +58,56 @@
                 top: 0;
                 transition: 0.5s;
               }
+              .slick-cloned {
+                transform: scale(1);
+                transform-origin: top center;
+                transition: 0.5s;
+              }
             }
+          }
+          .slick-prev {
+            border: 1px solid var(--main-active-btn);
+            opacity: 1;
+            color: var(--main-active-btn);
+            width: 56px;
+            height: 56px;
+            border-radius: 100%;
+            background: linear-gradient(180deg, #171a2de8 0%, #4b5593e3 100%);
+          }
+          .slick-prev::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 4px;
+            margin: auto auto;
+            width: 18px;
+            height: 18px;
+            border-inline-width: 4px 0;
+            border-block-width: 4px 0;
+            border-radius: 3px;
+          }
+          .slick-next {
+            border: 1px solid var(--main-active-btn);
+            opacity: 1;
+            color: var(--main-active-btn);
+            width: 56px;
+            height: 56px;
+            border-radius: 100%;
+            background: linear-gradient(180deg, #171a2de8 0%, #4b5593e3 100%);
+          }
+          .slick-next::after {
+            position: absolute;
+            top: 0;
+            right: 4px;
+            bottom: 0;
+            left: 0;
+            margin: auto auto;
+            width: 18px;
+            height: 18px;
+            border-inline-width: 4px 0;
+            border-block-width: 4px 0;
+            border-radius: 3px;
           }
         }
       }

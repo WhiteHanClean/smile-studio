@@ -22,6 +22,7 @@ const Tech = () => {
             centerMode={true}
             infinite={true}
             dots={false}
+            arrows
             draggable={true}
             slidesToScroll={1}
             slidesToShow={1}

@@ -23,8 +23,10 @@
       img {
         width: 100%;
         object-fit: contain;
+        z-index: 1;
       }
       .awards_card_glow {
+        z-index: 0;
         position: absolute;
         top: 30%;
         left: 50%;
@@ -33,12 +35,12 @@
         border-radius: 50%;
         background: radial-gradient(
           50% 50% at 50% 50%,
-          #63dbff,
-          #cfd5fc,
-          #999999 100%
+          #cdf0fb,
+          #d3d9fd,
+          #9999998c 100%
         );
-        mix-blend-mode: overlay;
-        filter: blur(15px);
+        mix-blend-mode: hard-light;
+        filter: blur(17px);
         transform: translate(-50%, -50%);
         animation: glow 2s infinite alternate;
       }
@@ -77,11 +79,11 @@
 
 @keyframes glow {
   0% {
-    opacity: 0.4;
+    opacity: 0.8;
     transform: translate(-50%, -50%) scale(1);
   }
   100% {
-    opacity: 0.7;
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1.1);
   }
 }

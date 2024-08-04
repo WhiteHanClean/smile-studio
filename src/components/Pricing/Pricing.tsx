@@ -7,11 +7,11 @@ import Image from "next/image";
 
 const Pricing = () => {
   return (
-    <section className={s.pricing}>
+    <section id='price-list' className={s.pricing}>
       <Container>
         <div className={s.pricing_container}>
           <div>
-            
+
             <Title
               title="Ценообразование"
               description="Получите конкурентоспособное предложение с индивидуальным подходом к вашим потребностям"
